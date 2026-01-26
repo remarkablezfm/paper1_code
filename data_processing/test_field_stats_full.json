@@ -1,0 +1,3000 @@
+{
+  "frame": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Frame",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.context": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Context",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.context.name": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": "801a330a4f575841d82bd5200e2c4fb2-009"
+  },
+  "frame.context.camera_calibrations": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.CameraCalibration",
+    "present_frames": 229,
+    "max_len": 8,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.context.camera_calibrations.name": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 2
+  },
+  "frame.context.camera_calibrations.intrinsic": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 9,
+    "sample": 1111.724609375
+  },
+  "frame.context.camera_calibrations.extrinsic": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Transform",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.context.camera_calibrations.extrinsic.transform": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": 0.7045525312423706
+  },
+  "frame.context.camera_calibrations.width": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 972
+  },
+  "frame.context.camera_calibrations.height": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 1079
+  },
+  "frame.context.camera_calibrations.rolling_shutter_direction": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 2
+  },
+  "frame.context.laser_calibrations": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.LaserCalibration",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.laser_calibrations.name": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.laser_calibrations.beam_inclinations": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.laser_calibrations.beam_inclination_min": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.laser_calibrations.beam_inclination_max": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.laser_calibrations.extrinsic": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Transform",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.laser_calibrations.extrinsic.transform": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Context.Stats",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.laser_object_counts": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Context.Stats.ObjectCount",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.laser_object_counts.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.laser_object_counts.count": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.camera_object_counts": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Context.Stats.ObjectCount",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.camera_object_counts.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.camera_object_counts.count": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.time_of_day": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.location": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.context.stats.weather": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.timestamp_micros": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0
+  },
+  "frame.pose": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Transform",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.pose.transform": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.CameraImage",
+    "present_frames": 229,
+    "max_len": 8,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.images.name": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 2
+  },
+  "frame.images.image": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "bytes_len": 358611
+    }
+  },
+  "frame.images.pose": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Transform",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.images.pose.transform": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": 1.0
+  },
+  "frame.images.velocity": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Velocity",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "frame.images.velocity.v_x": {
+    "label": "optional",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": -7.150773048400879
+  },
+  "frame.images.velocity.v_y": {
+    "label": "optional",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.8614269495010376
+  },
+  "frame.images.velocity.v_z": {
+    "label": "optional",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": -0.038697753101587296
+  },
+  "frame.images.velocity.w_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": -0.0031164782121777534
+  },
+  "frame.images.velocity.w_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.027591612190008163
+  },
+  "frame.images.velocity.w_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.050231024622917175
+  },
+  "frame.images.pose_timestamp": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.0
+  },
+  "frame.images.shutter": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.009993857704102993
+  },
+  "frame.images.camera_trigger_time": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.0
+  },
+  "frame.images.camera_readout_done_time": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 0.0
+  },
+  "frame.images.camera_segmentation_label": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.CameraSegmentationLabel",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.panoptic_label_divisor": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.panoptic_label": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.instance_id_to_global_id_mapping": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.CameraSegmentationLabel.InstanceIDToGlobalIDMapping",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.instance_id_to_global_id_mapping.local_instance_id": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.instance_id_to_global_id_mapping.global_instance_id": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.instance_id_to_global_id_mapping.is_tracked": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.sequence_id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.images.camera_segmentation_label.num_cameras_covered": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Laser",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.name": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.RangeImage",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.camera_projection_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image_pose_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image_flow_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.segmentation_label_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MatrixFloat",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image.data": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image.shape": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MatrixShape",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return1.range_image.shape.dims": {
+    "label": "repeated",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.RangeImage",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.camera_projection_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image_pose_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image_flow_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.segmentation_label_compressed": {
+    "label": "optional",
+    "field_type": "bytes",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MatrixFloat",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image.data": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image.shape": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MatrixShape",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.lasers.ri_return2.range_image.shape.dims": {
+    "label": "repeated",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Box",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.center_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.center_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.center_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.length": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.width": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.height": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.box.heading": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Metadata",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata.speed_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata.speed_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata.speed_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata.accel_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata.accel_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.metadata.accel_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.detection_difficulty_level": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.tracking_difficulty_level": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.num_lidar_points_in_box": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.num_top_lidar_points_in_box": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.LaserKeypoints",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.LaserKeypoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d.location_m": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d.location_m.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d.location_m.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d.location_m.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.laser_keypoints.keypoint.keypoint_3d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.CameraKeypoints",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.CameraKeypoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_2d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint2d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_2d.location_px": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector2d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_2d.location_px.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_2d.location_px.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_2d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_2d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d.location_m": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d.location_m.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d.location_m.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d.location_m.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_keypoints.keypoint.keypoint_3d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.association": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Association",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.association.laser_object_id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.most_visible_camera_name": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Box",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.center_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.center_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.center_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.length": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.width": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.height": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.laser_labels.camera_synced_box.heading": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.CameraLabels",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.name": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Box",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.center_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.center_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.center_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.length": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.width": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.height": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.box.heading": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Metadata",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata.speed_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata.speed_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata.speed_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata.accel_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata.accel_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.metadata.accel_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.detection_difficulty_level": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.tracking_difficulty_level": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.num_lidar_points_in_box": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.num_top_lidar_points_in_box": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.LaserKeypoints",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.LaserKeypoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.laser_keypoints.keypoint.keypoint_3d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.CameraKeypoints",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.CameraKeypoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_2d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint2d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_2d.location_px": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector2d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_2d.location_px.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_2d.location_px.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_2d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_2d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_keypoints.keypoint.keypoint_3d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.association": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Association",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.association.laser_object_id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.most_visible_camera_name": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Box",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.center_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.center_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.center_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.length": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.width": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.height": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.projected_lidar_labels.labels.camera_synced_box.heading": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.CameraLabels",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.name": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Box",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.center_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.center_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.center_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.length": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.width": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.height": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.box.heading": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Metadata",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata.speed_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata.speed_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata.speed_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata.accel_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata.accel_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.metadata.accel_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.detection_difficulty_level": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.tracking_difficulty_level": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.num_lidar_points_in_box": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.num_top_lidar_points_in_box": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.LaserKeypoints",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.LaserKeypoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d.location_m.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.laser_keypoints.keypoint.keypoint_3d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.CameraKeypoints",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.CameraKeypoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_2d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint2d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_2d.location_px": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector2d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_2d.location_px.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_2d.location_px.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_2d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_2d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.Keypoint3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d.location_m.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d.visibility": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.keypoints.KeypointVisibility",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_keypoints.keypoint.keypoint_3d.visibility.is_occluded": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.association": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Association",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.association.laser_object_id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.most_visible_camera_name": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Label.Box",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.center_x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.center_y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.center_z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.length": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.width": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.height": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.camera_labels.labels.camera_synced_box.heading": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.no_label_zones": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Polygon2dProto",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.no_label_zones.x": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.no_label_zones.y": {
+    "label": "repeated",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.no_label_zones.id": {
+    "label": "optional",
+    "field_type": "string",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapFeature",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.LaneCenter",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.speed_limit_mph": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.interpolating": {
+    "label": "optional",
+    "field_type": "bool",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.polyline": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.polyline.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.polyline.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.polyline.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.entry_lanes": {
+    "label": "repeated",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.exit_lanes": {
+    "label": "repeated",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_boundaries": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.BoundarySegment",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_boundaries.lane_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_boundaries.lane_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_boundaries.boundary_feature_id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_boundaries.boundary_type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_boundaries": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.BoundarySegment",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_boundaries.lane_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_boundaries.lane_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_boundaries.boundary_feature_id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_boundaries.boundary_type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.LaneNeighbor",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.feature_id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.self_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.self_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.neighbor_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.neighbor_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.boundaries": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.BoundarySegment",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.boundaries.lane_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.boundaries.lane_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.boundaries.boundary_feature_id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.left_neighbors.boundaries.boundary_type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.LaneNeighbor",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.feature_id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.self_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.self_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.neighbor_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.neighbor_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.boundaries": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.BoundarySegment",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.boundaries.lane_start_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.boundaries.lane_end_index": {
+    "label": "optional",
+    "field_type": "int32",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.boundaries.boundary_feature_id": {
+    "label": "optional",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.lane.right_neighbors.boundaries.boundary_type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_line": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.RoadLine",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_line.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_line.polyline": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_line.polyline.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_line.polyline.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_line.polyline.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_edge": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.RoadEdge",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_edge.type": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_edge.polyline": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_edge.polyline.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_edge.polyline.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.road_edge.polyline.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.stop_sign": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.StopSign",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.stop_sign.lane": {
+    "label": "repeated",
+    "field_type": "int64",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.stop_sign.position": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.stop_sign.position.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.stop_sign.position.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.stop_sign.position.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.crosswalk": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Crosswalk",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.crosswalk.polygon": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.crosswalk.polygon.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.crosswalk.polygon.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.crosswalk.polygon.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.speed_bump": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.SpeedBump",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.speed_bump.polygon": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.speed_bump.polygon.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.speed_bump.polygon.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.speed_bump.polygon.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.driveway": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Driveway",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.driveway.polygon": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.MapPoint",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.driveway.polygon.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.driveway.polygon.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_features.driveway.polygon.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_pose_offset": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.Vector3d",
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_pose_offset.x": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_pose_offset.y": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "frame.map_pose_offset.z": {
+    "label": "optional",
+    "field_type": "double",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "future_states": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.EgoTrajectoryStates",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "future_states.pos_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 20,
+    "sample": 1.81396484375
+  },
+  "future_states.pos_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 20,
+    "sample": 0.02392578125
+  },
+  "future_states.pos_z": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 20,
+    "sample": 0.0028228759765625
+  },
+  "future_states.vel_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "future_states.vel_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "future_states.accel_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "future_states.accel_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "future_states.preference_score": {
+    "label": "optional",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "past_states": {
+    "label": "optional",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.EgoTrajectoryStates",
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "past_states.pos_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": -23.95068359375
+  },
+  "past_states.pos_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": 0.61767578125
+  },
+  "past_states.pos_z": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "past_states.vel_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": 6.250306606292725
+  },
+  "past_states.vel_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": -0.3279613256454468
+  },
+  "past_states.accel_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": -0.026052474975585938
+  },
+  "past_states.accel_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 16,
+    "sample": 0.02021867036819458
+  },
+  "past_states.preference_score": {
+    "label": "optional",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "intent": {
+    "label": "optional",
+    "field_type": "enum",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": 1
+  },
+  "preference_trajectories": {
+    "label": "repeated",
+    "field_type": "message",
+    "message_type": "waymo.open_dataset.EgoTrajectoryStates",
+    "present_frames": 229,
+    "max_len": 3,
+    "sample": {
+      "type": "message"
+    }
+  },
+  "preference_trajectories.pos_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 1,
+    "max_len": 21,
+    "sample": 1.3603579998016357
+  },
+  "preference_trajectories.pos_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 1,
+    "max_len": 21,
+    "sample": -0.000265733600826934
+  },
+  "preference_trajectories.pos_z": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "preference_trajectories.vel_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "preference_trajectories.vel_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "preference_trajectories.accel_x": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "preference_trajectories.accel_y": {
+    "label": "repeated",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 0,
+    "max_len": 0,
+    "sample": "none"
+  },
+  "preference_trajectories.preference_score": {
+    "label": "optional",
+    "field_type": "float",
+    "message_type": null,
+    "present_frames": 229,
+    "max_len": 0,
+    "sample": -1.0
+  }
+}

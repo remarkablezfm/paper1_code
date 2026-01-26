@@ -1,0 +1,4 @@
+wod_export_Interections/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
