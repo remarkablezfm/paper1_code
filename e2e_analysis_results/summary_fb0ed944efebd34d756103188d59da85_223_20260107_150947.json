@@ -1,0 +1,73 @@
+{
+  "segment_id": "fb0ed944efebd34d756103188d59da85",
+  "key_idx": 223,
+  "file_position": 78,
+  "context_name": "fb0ed944efebd34d756103188d59da85-223",
+  "timestamp_micros": 0,
+  "past_states": {
+    "available_fields": [
+      "pos_x",
+      "pos_y",
+      "vel_x",
+      "vel_y"
+    ],
+    "sequence_lengths": {
+      "pos_x": 16,
+      "pos_y": 16,
+      "vel_x": 16,
+      "vel_y": 16
+    },
+    "pos_x_sample": [
+      -21.7568359375,
+      -20.1748046875,
+      -18.5498046875
+    ],
+    "pos_y_sample": [
+      -0.02978515625,
+      -0.00634765625,
+      0.01025390625
+    ],
+    "vel_x_sample": [
+      6.426236152648926,
+      6.566687107086182,
+      6.650088787078857
+    ],
+    "vel_y_sample": [
+      0.10726787894964218,
+      0.09395863860845566,
+      0.06050611287355423
+    ]
+  },
+  "future_states": {
+    "available_fields": [
+      "pos_x",
+      "pos_y",
+      "pos_z"
+    ],
+    "sequence_lengths": {
+      "pos_x": 20,
+      "pos_y": 20,
+      "pos_z": 20
+    },
+    "pos_x_sample": [
+      0.8994140625,
+      1.7099609375,
+      2.4296875
+    ],
+    "pos_y_sample": [
+      0.005859375,
+      0.01953125,
+      0.0439453125
+    ],
+    "pos_z_sample": [
+      0.01024627685546875,
+      0.0142059326171875,
+      0.01151275634765625
+    ]
+  },
+  "intent": {
+    "value": 1,
+    "semantic_meaning": "直行 (Lane Following)",
+    "failure_risk": 0.0002920970232577341
+  }
+}

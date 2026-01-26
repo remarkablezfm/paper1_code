@@ -1,0 +1,194 @@
+{
+  "segment_id": "fb0ed944efebd34d756103188d59da85",
+  "key_idx": 223,
+  "file_position": 78,
+  "timestamp": "20260107_150946",
+  "top_level_fields": [
+    "frame",
+    "future_states",
+    "past_states",
+    "intent",
+    "preference_trajectories"
+  ],
+  "detailed_structure": {
+    "message_type": "E2EDFrame",
+    "fields": {
+      "frame": {
+        "type": "nested_message",
+        "message_type": "Frame",
+        "fields_count": 5,
+        "details": {
+          "message_type": "Frame",
+          "fields": {
+            "context": {
+              "type": "nested_message",
+              "message_type": "Context",
+              "fields_count": 4
+            },
+            "timestamp_micros": {
+              "type": "int",
+              "value": "0"
+            },
+            "pose": {
+              "type": "nested_message",
+              "message_type": "Transform",
+              "fields_count": 1
+            },
+            "images": {
+              "type": "repeated",
+              "length": 8,
+              "sample": "<CameraImage>"
+            },
+            "lasers": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "laser_labels": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "projected_lidar_labels": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "camera_labels": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "no_label_zones": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "map_features": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "map_pose_offset": {
+              "type": "nested_message",
+              "message_type": "Vector3d",
+              "fields_count": 3
+            }
+          }
+        }
+      },
+      "future_states": {
+        "type": "nested_message",
+        "message_type": "EgoTrajectoryStates",
+        "fields_count": 5,
+        "details": {
+          "message_type": "EgoTrajectoryStates",
+          "fields": {
+            "pos_x": {
+              "type": "repeated",
+              "length": 20,
+              "sample": "0.8994140625"
+            },
+            "pos_y": {
+              "type": "repeated",
+              "length": 20,
+              "sample": "0.005859375"
+            },
+            "pos_z": {
+              "type": "repeated",
+              "length": 20,
+              "sample": "0.01024627685546875"
+            },
+            "vel_x": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "vel_y": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "accel_x": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "accel_y": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "preference_score": {
+              "type": "float",
+              "value": "0.0"
+            }
+          }
+        }
+      },
+      "past_states": {
+        "type": "nested_message",
+        "message_type": "EgoTrajectoryStates",
+        "fields_count": 5,
+        "details": {
+          "message_type": "EgoTrajectoryStates",
+          "fields": {
+            "pos_x": {
+              "type": "repeated",
+              "length": 16,
+              "sample": "-21.7568359375"
+            },
+            "pos_y": {
+              "type": "repeated",
+              "length": 16,
+              "sample": "-0.02978515625"
+            },
+            "pos_z": {
+              "type": "repeated",
+              "length": 0,
+              "sample": null
+            },
+            "vel_x": {
+              "type": "repeated",
+              "length": 16,
+              "sample": "6.426236152648926"
+            },
+            "vel_y": {
+              "type": "repeated",
+              "length": 16,
+              "sample": "0.10726787894964218"
+            },
+            "accel_x": {
+              "type": "repeated",
+              "length": 16,
+              "sample": "0.20577478408813477"
+            },
+            "accel_y": {
+              "type": "repeated",
+              "length": 16,
+              "sample": "-0.02171137183904648"
+            },
+            "preference_score": {
+              "type": "float",
+              "value": "0.0"
+            }
+          }
+        }
+      },
+      "intent": {
+        "type": "int",
+        "value": "1"
+      },
+      "preference_trajectories": {
+        "type": "repeated",
+        "length": 3,
+        "sample": "<EgoTrajectoryStates>"
+      }
+    }
+  },
+  "intent_analysis": {
+    "value": 1,
+    "semantic_meaning": "直行 (Lane Following)",
+    "failure_risk": 0.0002920970232577341
+  }
+}

@@ -1,0 +1,17 @@
+# waymo_clean 最小依赖 (仅运行 wod_e2e_exporter 所需)
+# 
+# 安装方法:
+#   conda create -n waymo_clean python=3.9 -y
+#   conda activate waymo_clean
+#   pip install -r waymo_clean_minimal.txt
+
+# 核心
+tensorflow==2.13.0
+protobuf==3.20.3
+waymo-open-dataset-tf-2-12-0==1.6.7
+
+# 数据处理
+numpy==1.23.5
+pandas==1.5.3
+opencv-python==4.5.5.64
+tqdm==4.67.1

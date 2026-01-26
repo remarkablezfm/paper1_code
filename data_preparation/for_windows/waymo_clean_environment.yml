@@ -1,0 +1,63 @@
+# waymo_clean 环境配置 (适用于 Windows Anaconda)
+# 
+# 安装方法:
+#   conda env create -f waymo_clean_environment.yml
+#   conda activate waymo_clean
+#
+# 来源: WSL waymo_clean 环境
+
+name: waymo_clean
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    # === 核心机器学习 ===
+    - tensorflow==2.13.0
+    - keras==2.13.1
+    - protobuf==3.20.3
+    
+    # === Waymo Open Dataset ===
+    - waymo-open-dataset-tf-2-12-0==1.6.7
+    
+    # === 数据处理 ===
+    - numpy==1.23.5
+    - pandas==1.5.3
+    - scipy==1.9.1
+    - scikit-learn==1.2.2
+    - scikit-image==0.20.0
+    
+    # === 图像处理 ===
+    - opencv-python==4.5.5.64
+    - pillow==9.2.0
+    - imageio==2.37.2
+    
+    # === 可视化 ===
+    - matplotlib==3.6.1
+    - plotly==5.13.1
+    
+    # === Jupyter ===
+    - jupyter==1.1.1
+    - jupyterlab==4.5.1
+    - ipykernel==6.31.0
+    - ipywidgets==8.1.8
+    
+    # === 工具 ===
+    - tqdm==4.67.1
+    - click==8.1.8
+    - pyyaml==6.0.3
+    
+    # === TensorFlow 相关 ===
+    - tensorboard==2.13.0
+    - tensorflow-datasets==4.9.0
+    - tensorflow-probability==0.21.0
+    - h5py==3.14.0
+    
+    # === 其他 ===
+    - absl-py==1.4.0
+    - grpcio==1.74.0
+    - pyarrow==16.0.0

@@ -1,0 +1,23 @@
+# WOD-E2E Exporter Requirements (based on waymo_clean from WSL)
+# 
+# Windows pip 安装方法:
+#   pip install -r requirements.txt
+#
+# 注意: Waymo SDK 官方仅支持 Linux
+
+# === 核心依赖 ===
+numpy==1.23.5
+pandas==1.5.3
+opencv-python==4.5.5.64
+tqdm==4.67.1
+pillow==9.2.0
+
+# === TensorFlow ===
+tensorflow==2.13.0
+
+# === Protobuf (重要: 必须是 3.x 版本，与 TF 2.13 兼容) ===
+protobuf==3.20.3
+
+# === Waymo Open Dataset SDK ===
+# 警告: 此包官方仅支持 Linux，Windows 上可能安装失败
+waymo-open-dataset-tf-2-12-0==1.6.7

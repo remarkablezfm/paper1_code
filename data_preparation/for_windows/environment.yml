@@ -1,0 +1,35 @@
+# WOD-E2E Exporter Environment (based on waymo_clean from WSL)
+# 
+# Windows 安装方法:
+#   conda env create -f environment.yml
+#   conda activate wod_e2e
+#
+# 注意: Waymo SDK 官方仅支持 Linux，Windows 上可能有兼容性问题
+
+name: wod_e2e
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    # === 核心依赖 (与 WSL waymo_clean 版本一致) ===
+    - numpy==1.23.5
+    - pandas==1.5.3
+    - opencv-python==4.5.5.64
+    - tqdm==4.67.1
+    - pillow==9.2.0
+    
+    # === TensorFlow (必须在 protobuf 之前安装) ===
+    - tensorflow==2.13.0
+    
+    # === Protobuf (重要: 必须是 3.x 版本) ===
+    - protobuf==3.20.3
+    
+    # === Waymo Open Dataset SDK ===
+    # 警告: 此包官方仅支持 Linux
+    # 如果安装失败，请使用 WSL
+    - waymo-open-dataset-tf-2-12-0==1.6.7
